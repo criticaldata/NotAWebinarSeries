@@ -1,4 +1,4 @@
-# TINAWS — This Is Not a Webinar
+# TINAWS — This Is Not a Webinar Series
 
 A website for **MIT Critical Data's "This Is Not a Webinar"** project — an initiative for people who are done pretending learning is a ladder.
 

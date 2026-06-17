@@ -2,172 +2,596 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 	<title>This Is Not a Webinar &middot; MIT Critical Data</title>
-	<meta name="description" content="This Is Not a Webinar — a conversation series from MIT Critical Data for people who are done pretending learning is a ladder." />
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+	<meta
+		name="description"
+		content="This Is Not a Webinar — a conversation series from MIT Critical Data for people who are done pretending learning is a ladder."
+	/>
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i"
+		rel="stylesheet"
+	/>
+
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+	/>
+
 	<link rel="stylesheet" href="main.css" />
+
 	<noscript>
 		<style>
-			#main { display: flex !important; }
-			#main article { opacity: 1 !important; margin: 4rem 0 0 0; display: block !important; }
-			#main article .close { display: none; }
+			#main {
+				display: flex !important;
+			}
+
+			#main article {
+				display: block !important;
+				opacity: 1 !important;
+				margin: 4rem 0 0 0;
+			}
+
+			#main article .close {
+				display: none;
+			}
 		</style>
 	</noscript>
 </head>
+
 <body>
 	<div class="body is-loading">
 		<div id="wrapper">
 
 			<header id="header">
-				<div class="logo">
-					<i class="far fa-gem" style="font-size:2rem;line-height:5.5rem;"></i>
+				<div class="logo" aria-hidden="true">
+					<i
+						class="far fa-gem"
+						style="font-size: 2rem; line-height: 5.5rem;"
+					></i>
 				</div>
+
 				<div class="content">
 					<div class="inner">
 						<h1>This Is Not a Webinar</h1>
-						<p>An initiative for people who are done pretending learning is a ladder.<br />
-						A conversation series from <a href="https://criticaldata.mit.edu">MIT Critical Data</a>.</p>
+
+						<p>
+							An initiative for people who are done pretending learning is a ladder.
+							<br />
+							A conversation series from
+							<a href="https://criticaldata.mit.edu">MIT Critical Data</a>.
+						</p>
 					</div>
 				</div>
-				<nav>
+
+				<nav aria-label="Main navigation">
 					<ul>
-						<li><a href="#intro" data-article="intro">What This Is</a></li>
-						<li><a href="#work" data-article="work">The Problem</a></li>
-						<li><a href="#about" data-article="about">What We Do</a></li>
-						<li><a href="#contact" data-article="contact">Get Involved</a></li>
+						<li>
+							<a href="#intro" data-article="intro">What This Is</a>
+						</li>
+						<li>
+							<a href="#work" data-article="work">The Problem</a>
+						</li>
+						<li>
+							<a href="#about" data-article="about">What We Do</a>
+						</li>
+						<li>
+							<a href="#contact" data-article="contact">Get Involved</a>
+						</li>
 					</ul>
 				</nav>
 			</header>
 
-			<div id="main">
+			<main id="main">
 
-				<article id="intro">
+				<article id="intro" tabindex="-1" aria-hidden="true">
 					<h2 class="major">What This Is</h2>
-					<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-					<p>This Is Not a Webinar is a recurring conversation series &mdash; part salon, part confessional, part coup-in-planning &mdash; for students, researchers, and curious humans who suspect that the way we learn, publish, and perform has gone badly wrong. It grew out of an impromptu Zoom call on May 24, 2025, convened by Leo Anthony Celi (MIT Critical Data) with a cohort of high schoolers, undergraduates, medical students, and recent graduates spread across Atlanta, Dallas, Houston, Vienna, Vancouver, and Harizawa, Ethiopia.</p>
-					<p>The name is the thesis. Webinars are what happen when you want to look productive. This is something else: unscripted, emotionally honest, and structurally allergic to the incentive systems it's trying to dismantle. The intended output is rewired participants, not polished publications.</p>
-					<blockquote>"We don't want to boil the ocean. We want to fry it."</blockquote>
-					<div class="close">Close</div>
+
+					<span class="image main">
+						<img
+							src="images/pic01.jpg"
+							alt="Participants engaging in an open conversation"
+						/>
+					</span>
+
+					<p>
+						This Is Not a Webinar is a recurring conversation series &mdash;
+						part salon, part confessional, part coup-in-planning &mdash; for
+						students, researchers, and curious humans who suspect that the way
+						we learn, publish, and perform has gone badly wrong. It grew out of
+						an impromptu Zoom call on May 24, 2025, convened by Leo Anthony Celi
+						(MIT Critical Data) with a cohort of high schoolers, undergraduates,
+						medical students, and recent graduates spread across Atlanta,
+						Dallas, Houston, Vienna, Vancouver, and Harizawa, Ethiopia.
+					</p>
+
+					<p>
+						The name is the thesis. Webinars are what happen when you want to
+						look productive. This is something else: unscripted, emotionally
+						honest, and structurally allergic to the incentive systems it is
+						trying to dismantle. The intended output is rewired participants,
+						not polished publications.
+					</p>
+
+					<blockquote>
+						“We don't want to boil the ocean. We want to fry it.”
+					</blockquote>
+
+					<div
+						class="close"
+						role="button"
+						tabindex="0"
+						aria-label="Close What This Is"
+					>
+						Close
+					</div>
 				</article>
 
-				<article id="work">
+				<article id="work" tabindex="-1" aria-hidden="true">
 					<h2 class="major">The Problem</h2>
-					<p>AI has made it trivially easy to produce papers, websites, and polished deliverables. This would be a gift if those things were what we actually needed more of. They are not. The real crisis is that research and learning have been captured by the metrics used to measure them &mdash; citations, h-indices, elite affiliations, summer program checkboxes &mdash; until the act of discovering something true and useful for its own sake has become almost eccentric.</p>
-					<p>One participant cited a researcher who went from 100 citations to 17,000 in a single year using AI self-citation. This is not an outlier. It is the destination of a road we've been on for decades. The question this series asks is not how to fix the metrics &mdash; it's how to stop needing them.</p>
-					<div class="close">Close</div>
+
+					<p>
+						AI has made it trivially easy to produce papers, websites, and
+						polished deliverables. This would be a gift if those things were
+						what we actually needed more of. They are not. The real crisis is
+						that research and learning have been captured by the metrics used
+						to measure them &mdash; citations, h-indices, elite affiliations,
+						and summer program checkboxes &mdash; until the act of discovering
+						something true and useful for its own sake has become almost
+						eccentric.
+					</p>
+
+					<p>
+						One participant cited a researcher who went from 100 citations to
+						17,000 in a single year using AI self-citation. This is not an
+						outlier. It is the destination of a road we have been on for
+						decades. The question this series asks is not how to fix the metrics
+						&mdash; it is how to stop needing them.
+					</p>
+
+					<div
+						class="close"
+						role="button"
+						tabindex="0"
+						aria-label="Close The Problem"
+					>
+						Close
+					</div>
 				</article>
 
-				<article id="about">
+				<article id="about" tabindex="-1" aria-hidden="true">
 					<h2 class="major">What We Do</h2>
-					<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-					<p>Each session assigns one participant or small group to bring a topic &mdash; not a polished presentation, not a literature review &mdash; just honest thoughts. The conversation that follows is what Celi calls <em>heartstorming</em> and <em>soulstorming</em>: experience and emotion as the primary inputs, not cleverness. Sessions draw on storytelling, process art, and perspectives from indigenous and non-Western knowledge traditions that have long practiced what we're only now trying to articulate.</p>
+
+					<span class="image main">
+						<img
+							src="images/pic03.jpg"
+							alt="A collaborative learning and discussion session"
+						/>
+					</span>
+
+					<p>
+						Each session assigns one participant or small group to bring a
+						topic &mdash; not a polished presentation, not a literature review
+						&mdash; just honest thoughts. The conversation that follows is what
+						Celi calls <em>heartstorming</em> and <em>soulstorming</em>:
+						experience and emotion as the primary inputs, not cleverness.
+						Sessions draw on storytelling, process art, and perspectives from
+						Indigenous and non-Western knowledge traditions that have long
+						practiced what we are only now trying to articulate.
+					</p>
+
 					<h3>Topics for the series</h3>
+
 					<ul>
-						<li>Reimagining the CV &mdash; what it looks like when you're not chasing glory</li>
-						<li>Your best teacher &mdash; storytelling as a form of neural rewiring</li>
-						<li>Process over product &mdash; what process art teaches us about research</li>
-						<li>Being a double agent &mdash; navigating broken systems without becoming them</li>
-						<li>Relational accountability &mdash; what indigenous communities know that we don't</li>
-						<li>Purpose at 17 &mdash; why midlife crises are symptoms of deferred meaning</li>
-						<li>What would we do if papers didn't exist?</li>
-						<li>Who's not in the room &mdash; designing inclusion before launching the series</li>
+						<li>
+							Reimagining the CV &mdash; what it looks like when you are not
+							chasing glory
+						</li>
+						<li>
+							Your best teacher &mdash; storytelling as a form of neural
+							rewiring
+						</li>
+						<li>
+							Process over product &mdash; what process art teaches us about
+							research
+						</li>
+						<li>
+							Being a double agent &mdash; navigating broken systems without
+							becoming them
+						</li>
+						<li>
+							Relational accountability &mdash; what Indigenous communities
+							know that we do not
+						</li>
+						<li>
+							Purpose at 17 &mdash; why midlife crises are symptoms of deferred
+							meaning
+						</li>
+						<li>What would we do if papers did not exist?</li>
+						<li>
+							Who is not in the room &mdash; designing inclusion before
+							launching the series
+						</li>
 					</ul>
+
+					<div
+						class="close"
+						role="button"
+						tabindex="0"
+						aria-label="Close What We Do"
+					>
+						Close
+					</div>
 				</article>
 
-				<article id="contact">
+				<article id="contact" tabindex="-1" aria-hidden="true">
 					<h2 class="major">Get Involved</h2>
-					<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-					<p>The people who need this most will not be the last to be invited. If you're a student, researcher, or curious human who suspects learning has gone badly wrong, there will be a way in.</p>
-					<p><strong>More info coming soon.</strong></p>
+
+					<span class="image main">
+						<img
+							src="images/pic04.jpg"
+							alt="People connecting through the MIT Critical Data community"
+						/>
+					</span>
+
+					<p>
+						The people who need this most will not be the last to be invited.
+						If you are a student, researcher, or curious human who suspects
+						learning has gone badly wrong, there will be a way in.
+					</p>
+
+					<p>
+						<strong>More information coming soon.</strong>
+					</p>
+
 					<ul class="icons">
-						<li><a href="https://www.instagram.com/mitcriticaldata/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="https://www.linkedin.com/company/mitcriticaldata/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+						<li>
+							<a
+								href="https://www.instagram.com/mitcriticaldata/"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="MIT Critical Data on Instagram"
+							>
+								<i class="fab fa-instagram" aria-hidden="true"></i>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.linkedin.com/company/mitcriticaldata/"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="MIT Critical Data on LinkedIn"
+							>
+								<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+							</a>
+						</li>
 					</ul>
-					<div class="close">Close</div>
+
+					<div
+						class="close"
+						role="button"
+						tabindex="0"
+						aria-label="Close Get Involved"
+					>
+						Close
+					</div>
 				</article>
 
-			</div>
+			</main>
 
 			<footer id="footer">
-				<p class="copyright">This Is Not a Webinar &middot; <a href="https://criticaldata.mit.edu">MIT Critical Data</a> </p>
+				<p class="copyright">
+					This Is Not a Webinar &middot;
+					<a href="https://criticaldata.mit.edu">MIT Critical Data</a>
+				</p>
 			</footer>
 
 		</div>
-		<div id="bg"></div>
+
+		<div id="bg" aria-hidden="true"></div>
 	</div>
 
 	<script>
-		// Replicates the React state machine from the original Next.js components.
 		(function () {
+			'use strict';
+
 			var body = document.querySelector('.body');
 			var header = document.getElementById('header');
 			var footer = document.getElementById('footer');
 			var main = document.getElementById('main');
-			var articles = Array.prototype.slice.call(main.querySelectorAll('article'));
 
-			var state = { isArticleVisible: false, timeout: false, articleTimeout: false, article: '' };
+			if (!body || !header || !footer || !main) {
+				console.error('Required page elements could not be found.');
+				return;
+			}
+
+			var articles = Array.prototype.slice.call(
+				main.querySelectorAll('article')
+			);
+
+			var state = {
+				isArticleVisible: false,
+				timeout: false,
+				articleTimeout: false,
+				article: ''
+			};
+
+			var transitionTimers = [];
 			var lastOpenedAt = 0;
+			var lastTrigger = null;
+
+			function articleExists(id) {
+				return articles.some(function (article) {
+					return article.id === id;
+				});
+			}
+
+			function clearTransitionTimers() {
+				transitionTimers.forEach(function (timer) {
+					window.clearTimeout(timer);
+				});
+
+				transitionTimers = [];
+			}
+
+			function addTransitionTimer(callback, delay) {
+				var timer = window.setTimeout(callback, delay);
+				transitionTimers.push(timer);
+			}
 
 			function render() {
-				body.classList.toggle('is-article-visible', state.isArticleVisible);
+				body.classList.toggle(
+					'is-article-visible',
+					state.isArticleVisible
+				);
+
 				header.style.display = state.timeout ? 'none' : '';
 				footer.style.display = state.timeout ? 'none' : '';
 				main.style.display = state.timeout ? 'flex' : 'none';
-				articles.forEach(function (a) {
-					a.classList.toggle('active', a.id === state.article);
-					a.classList.toggle('timeout', state.articleTimeout);
+
+				articles.forEach(function (article) {
+					var isActive = article.id === state.article;
+
+					article.classList.toggle('active', isActive);
+					article.classList.toggle(
+						'timeout',
+						isActive && state.articleTimeout
+					);
+
+					article.setAttribute(
+						'aria-hidden',
+						isActive && state.isArticleVisible ? 'false' : 'true'
+					);
 				});
 			}
 
-			function openArticle(id) {
-				state.isArticleVisible = true;
-				state.article = id;
-				lastOpenedAt = Date.now();
-				render();
-				setTimeout(function () { state.timeout = true; render(); }, 325);
-				setTimeout(function () { state.articleTimeout = true; render(); }, 350);
+			function updateHash(id) {
+				var newURL =
+					window.location.pathname +
+					window.location.search +
+					'#' +
+					encodeURIComponent(id);
+
+				window.history.pushState(
+					{ article: id },
+					'',
+					newURL
+				);
 			}
 
-			function closeArticle() {
+			function clearHash() {
+				var newURL =
+					window.location.pathname +
+					window.location.search;
+
+				window.history.replaceState(
+					{ article: null },
+					'',
+					newURL
+				);
+			}
+
+			function openArticle(id, options) {
+				options = options || {};
+
+				if (!articleExists(id)) {
+					return;
+				}
+
+				clearTransitionTimers();
+
+				lastTrigger =
+					options.trigger instanceof HTMLElement
+						? options.trigger
+						: document.activeElement;
+
+				lastOpenedAt = Date.now();
+
+				state.isArticleVisible = true;
+				state.article = id;
 				state.articleTimeout = false;
+
 				render();
-				setTimeout(function () { state.timeout = false; render(); }, 325);
-				setTimeout(function () {
-					state.isArticleVisible = false;
-					state.article = '';
+
+				if (options.updateHash !== false) {
+					updateHash(id);
+				}
+
+				addTransitionTimer(function () {
+					state.timeout = true;
 					render();
+				}, 325);
+
+				addTransitionTimer(function () {
+					state.articleTimeout = true;
+					render();
+
+					var activeArticle = document.getElementById(id);
+
+					if (activeArticle) {
+						activeArticle.focus();
+					}
 				}, 350);
 			}
 
-			document.querySelectorAll('nav a[data-article]').forEach(function (link) {
-				link.addEventListener('click', function (e) {
-					e.preventDefault();
-					openArticle(this.getAttribute('data-article'));
+			function closeArticle(options) {
+				options = options || {};
+
+				if (!state.isArticleVisible) {
+					return;
+				}
+
+				clearTransitionTimers();
+
+				state.articleTimeout = false;
+				render();
+
+				addTransitionTimer(function () {
+					state.timeout = false;
+					render();
+				}, 325);
+
+				addTransitionTimer(function () {
+					state.isArticleVisible = false;
+					state.article = '';
+
+					render();
+
+					if (options.clearHash !== false) {
+						clearHash();
+					}
+
+					if (
+						options.restoreFocus !== false &&
+						lastTrigger &&
+						typeof lastTrigger.focus === 'function'
+					) {
+						lastTrigger.focus();
+					}
+				}, 350);
+			}
+
+			function getHashArticle() {
+				var hash = window.location.hash.replace(/^#/, '');
+
+				if (!hash) {
+					return '';
+				}
+
+				try {
+					hash = decodeURIComponent(hash);
+				} catch (error) {
+					return '';
+				}
+
+				return articleExists(hash) ? hash : '';
+			}
+
+			function handleLocationChange() {
+				var articleID = getHashArticle();
+
+				if (articleID) {
+					if (
+						!state.isArticleVisible ||
+						state.article !== articleID
+					) {
+						openArticle(articleID, {
+							updateHash: false,
+							restoreFocus: false
+						});
+					}
+				} else if (state.isArticleVisible) {
+					closeArticle({
+						clearHash: false,
+						restoreFocus: false
+					});
+				}
+			}
+
+			document
+				.querySelectorAll('nav a[data-article]')
+				.forEach(function (link) {
+					link.addEventListener('click', function (event) {
+						event.preventDefault();
+
+						var articleID = link.getAttribute('data-article');
+
+						openArticle(articleID, {
+							trigger: link,
+							updateHash: true
+						});
+					});
+				});
+
+			articles.forEach(function (article) {
+				var closeButton = article.querySelector('.close');
+
+				if (!closeButton) {
+					console.warn(
+						'Article #' + article.id + ' does not have a close button.'
+					);
+					return;
+				}
+
+				closeButton.addEventListener('click', function (event) {
+					event.preventDefault();
+					closeArticle();
+				});
+
+				closeButton.addEventListener('keydown', function (event) {
+					if (event.key === 'Enter' || event.key === ' ') {
+						event.preventDefault();
+						closeArticle();
+					}
 				});
 			});
 
-			articles.forEach(function (a) {
-				a.querySelector('.close').addEventListener('click', closeArticle);
-			});
-
-			// Close on Escape, and close when clicking outside the open article.
-			document.addEventListener('keydown', function (e) {
-				if (e.key === 'Escape' && state.isArticleVisible) closeArticle();
-			});
-			document.addEventListener('click', function (e) {
-				if (!state.isArticleVisible) return;
-				if (Date.now() - lastOpenedAt < 400) return; // ignore the opening click itself
-				var open = main.querySelector('article.active');
-				if (open && !open.contains(e.target) && !e.target.closest('nav a[data-article]')) {
+			document.addEventListener('keydown', function (event) {
+				if (
+					event.key === 'Escape' &&
+					state.isArticleVisible
+				) {
 					closeArticle();
 				}
 			});
 
-			// Remove the loading state shortly after paint (mirrors the 100ms timeout).
+			document.addEventListener('click', function (event) {
+				if (!state.isArticleVisible) {
+					return;
+				}
+
+				if (Date.now() - lastOpenedAt < 400) {
+					return;
+				}
+
+				var openArticleElement =
+					main.querySelector('article.active');
+
+				var clickedNavigationLink =
+					event.target instanceof Element
+						? event.target.closest('nav a[data-article]')
+						: null;
+
+				if (
+					openArticleElement &&
+					!openArticleElement.contains(event.target) &&
+					!clickedNavigationLink
+				) {
+					closeArticle();
+				}
+			});
+
+			window.addEventListener('popstate', handleLocationChange);
+
 			window.addEventListener('load', function () {
-				setTimeout(function () { body.classList.remove('is-loading'); }, 100);
+				window.setTimeout(function () {
+					body.classList.remove('is-loading');
+					handleLocationChange();
+				}, 100);
 			});
 
 			render();
